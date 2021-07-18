@@ -1,5 +1,0 @@
-Credentials cache: API:D85ACB05-21CD-475B-A271-546E2D400D27
-        Principal: joklose@42ADEL.ORG.AU
-
-  Issued                Expires               Principal
-Jun 21 16:13:26 2021  Jun 22 02:13:15 2021  krbtgt/42ADEL.ORG.AU@42ADEL.ORG.AU
