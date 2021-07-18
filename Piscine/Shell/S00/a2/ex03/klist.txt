@@ -1,0 +1,5 @@
+Credentials cache: API:016933BD-BE3B-4C3A-8AE7-977524D0840E
+        Principal: nervin@42ADEL.ORG.AU
+
+  Issued                Expires               Principal
+Jun 28 11:34:20 2021  Jun 28 21:34:17 2021  krbtgt/42ADEL.ORG.AU@42ADEL.ORG.AU
