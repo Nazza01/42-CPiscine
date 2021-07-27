@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-// Outputs a string until the null terminating string
+// Outputs a string until the null terminating character
 void	ft_putstr(char *str)
 {
 	int		i;
