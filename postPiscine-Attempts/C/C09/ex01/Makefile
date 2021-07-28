@@ -4,22 +4,37 @@ CFLAGS	=-Wall -Wextra -Werror
 SRCS	="./srcs"
 INCL	="./includes"
 
-CFILES	=${SRCS}*.c
-HFILES	=${INCL}*.h
+CFILES	="${SRCS}*.c"
+HFILES	="${INCL}*.h"
+
+all:
+	@echo "all"
+	make libft.a
+
+clean:
+	@echo "clean"
+
+fclean:
+	@echo "fclean"
+
+re:
+	@echo "re"
+
+libft.a:
+	@echo "libft.a"
 
 
+# # Compile all the .c files without worrying about a main function
+# gcc -Wall -Wextra -Werror -c *.c
 
-# Compile all the .c files without worrying about a main function
-gcc -Wall -Wextra -Werror -c *.c
+# # Creates the libft.a library using all the object files
+# # -r	Replaces or adds specific files to the archive (if it hasnt been created)
+# # -c	Creates the archive silently
+# ar -rc libft.a *.o
 
-# Creates the libft.a library using all the object files
-# -r	Replaces or adds specific files to the archive (if it hasnt been created)
-# -c	Creates the archive silently
-ar -rc libft.a *.o
+# # Adds or updates object files in the static library
+# ranlib libft.a
 
-# Adds or updates object files in the static library
-ranlib libft.a
-
-# Removes all the object files to clean up the directory
-rm -f *.o
+# # Removes all the object files to clean up the directory
+# rm -f *.o
 
