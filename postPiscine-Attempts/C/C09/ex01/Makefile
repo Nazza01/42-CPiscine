@@ -1,14 +1,12 @@
 CC		=gcc
 CFLAGS	=-Wall -Wextra -Werror
-
-SRCS	="./srcs"
-INCL	="./includes"
-
-CFILES	="${SRCS}*.c"
-HFILES	="${INCL}*.h"
+CFILE	:=$(shell find . -type f -name "srcs/*.c")
+HFILE	:=$(shell find . -type f -name "includes/*.h")
+CLIB	=ar -rc libft.a *.o
+RLIB	=ranlib libft.a
+CLR		=rm -f *.o
 
 all:
-	@echo "all"
 	make libft.a
 
 clean:
@@ -22,7 +20,7 @@ re:
 
 libft.a:
 	@echo "libft.a"
-
+	${CC} ${CFLAGS} -c ${CFILE}
 
 # # Compile all the .c files without worrying about a main function
 # gcc -Wall -Wextra -Werror -c *.c
